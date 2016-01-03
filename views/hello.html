@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Twig </title>
+</head>
+<body>
+
+    Hello , {{ name }} ! you are {{ age }} years old ...
+
+    { if age > 15 }
+
+         <br /> <br /> You are over the age of 15 ; <br /> <br />
+
+    { endif }
+
+
+    { for user in users }
+
+         {{user.name}} is {{user.age}} years old .... <br />
+
+    { endfor }
+
+
+    <br />{{ 'string' | md5}}
+
+</body>
+</html>
